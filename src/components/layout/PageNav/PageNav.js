@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 //import styles from './HappyHourAd.scss';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 const PageNav = ({children}) => (
   <nav>
