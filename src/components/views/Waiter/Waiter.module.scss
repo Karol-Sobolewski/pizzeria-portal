@@ -3,3 +3,16 @@
 .component {
   padding: $base-size;
 }
+
+.paper {
+  position: relative;
+  padding: 2vh;
+  text-align: center;
+  color: #444;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -120%;
+  left: 50%;
+}
