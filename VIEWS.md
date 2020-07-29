@@ -16,7 +16,7 @@
   -tabela z lista rezerwacji oraz wydarzen
     -kazda kolumna = 1 stolik
     -kazdy wiersz = 30 minut
-    -tabela ma przyominac wudok tygodnia w kalendarzu Google, w kolumnach zamiast dni sa rozne stoliki
+    -tabela ma przyominac widok tygodnia w kalendarzu Google, w kolumnach zamiast dni sa rozne stoliki
     -po kliknieciu rezerwacji lub eventu, przechodzimy na strone szczególow
 - `/tables/booking/:id`
     -zawiera wszystkie info dot rezerwacji
@@ -32,7 +32,7 @@
 - `/waiter`
     -tabela
       -w wierszach stoliki
-      -w kolumnach rone rodzaje info (status, czas od ostatniej aktywnosci)
+      -w kolumnach rozne rodzaje info (status, czas od ostatniej aktywnosci)
       -w ostatniej kolumnie dostepne akcje dla danego stolika
 - `/waiter/order/new`
   -numer stolika (edytowalny)

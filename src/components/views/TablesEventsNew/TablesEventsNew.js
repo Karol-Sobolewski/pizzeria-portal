@@ -3,7 +3,7 @@ import styles from './TablesEventsNew.module.scss';
 
 const TablesEventsNew = (/*{title}*/) => (
   <div className={styles.component}>
-    <h2>Tables view</h2>
+    <h2> events new view</h2>
   </div>
 );
 
