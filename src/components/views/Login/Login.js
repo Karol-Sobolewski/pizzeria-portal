@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import {Link} from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
 
 const Login = (/*{title}*/) => (
   <div className={styles.component}>
@@ -11,9 +12,21 @@ const Login = (/*{title}*/) => (
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Paper className={styles.paper}>
-          <form>
-            <input type="text"/>
-            <input type="password"/>
+          <form className={styles.form}>
+            <TextField
+              required
+              id="outlined-required"
+              label="Required"
+              defaultValue="Login"
+              variant="outlined"
+            />
+            <TextField
+              id="outlined-password-input"
+              label="Password"
+              type="password"
+              autoComplete="current-password"
+              variant="outlined"
+            />
             <Button className={styles.link} color="secondary" variant="contained" component = {Link} exact to={`${process.env.PUBLIC_URL}/`}>LOGIN</Button>
           </form>
         </Paper>

@@ -47,10 +47,10 @@ function App() {
                 <Route exact path={`${process.env.PUBLIC_URL}/tables/booking/:id`} component={TablesBooking} />
                 <Route exact path={`${process.env.PUBLIC_URL}/tables/events/new`} component={TablesEventsNew} />
                 <Route exact path={`${process.env.PUBLIC_URL}/tables/events/:id`} component={TablesEvents} />
-                <Route path={`${process.env.PUBLIC_URL}/waiter`} component={Waiter} />
+                <Route exact path={`${process.env.PUBLIC_URL}/waiter`} component={Waiter} />
                 <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/:id`} component={WaiterOrder} />
                 <Route exact path={`${process.env.PUBLIC_URL}/waiter/order/new`} component={WaiterOrderNew} />
-                <Route path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
+                <Route exact path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
 
                 {/*{routes.map(route => (
               <Route key={route.path} exact path = {`${process.env.PUBLIC_URL}${route.path}`} component={route.component} />

@@ -36,6 +36,13 @@ const Tables = (id) => {
     {id: 4, hour: '13:30', table1: 'occupied', table2: 'occupied', table3: `free`},
     {id: 5, hour: '14:00', table1: 'free', table2: 'free', table3: `occupied`},
     {id: 6, hour: '14:30', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 7, hour: '15:00', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 8, hour: '15:30', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 9, hour: '16:00', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 10, hour: '16:30', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 11, hour: '17:00', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 12, hour: '17:30', table1: 'free', table2: 'occupied', table3: `occupied`},
+    {id: 13, hour: '18:00', table1: 'free', table2: 'occupied', table3: `occupied`},
   ];
 
 
@@ -110,11 +117,12 @@ const Tables = (id) => {
             </Paper>
           </Paper>
         </Grid>
-        {/*<Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Paper className={styles.paper}>
-            <Link to={`tables/booking/2`} className={styles.link}>Booking ID:</Link>
-            <Tooltip title="New Booking" aria-label="new-booking">
-              <Fab color="secondary" className={styles.absolute} component = {Link} exact to={`tables/booking/new`}>
+            <span>New Booking</span>
+            {/*<Link to={`tables/booking/2`} className={styles.link}>New Booking</Link>*/}
+            <Tooltip title="New booking" aria-label="new-booking">
+              <Fab color="secondary" className={styles.fab} component = {Link} exact to={`tables/booking/new`}>
                 <AddIcon/>
               </Fab>
             </Tooltip>
@@ -122,15 +130,15 @@ const Tables = (id) => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Paper className={styles.paper}>
-            <Link to={`events/events/3`} className={styles.link}>Event ID:</Link>
-            <Tooltip title="New Event" aria-label="new-event">
-              <Fab color="secondary" className={styles.absolute} component = {Link} exact to={`tables/events/new`}>
+            {/*<Link to={`events/events/3`} className={styles.link}>Event ID:</Link>*/}
+            <span>New Event</span>
+            <Tooltip title="New event" aria-label="new-event">
+              <Fab color="secondary" className={styles.fab} component = {Link} exact to={`tables/events/new`}>
                 <AddIcon/>
               </Fab>
             </Tooltip>
           </Paper>
         </Grid>
-        */}
       </Grid>
     </div>
 

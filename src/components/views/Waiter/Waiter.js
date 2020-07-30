@@ -10,6 +10,11 @@ import Button from '@material-ui/core/Button';
 /*import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
 import Tooltip from '@material-ui/core/Tooltip';*/
+import Grid from '@material-ui/core/Grid';
+import {Link} from 'react-router-dom';
+import AddIcon from '@material-ui/icons/Add';
+import Fab from '@material-ui/core/Fab';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const demoContent = [
   {id: '1', status: 'free', order: null},
@@ -56,39 +61,54 @@ const renderActions = status => {
 
 const Waiter = () => (
   <Paper className={styles.component}>
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableCell>Table</TableCell>
-          <TableCell>Status</TableCell>
-          <TableCell>Order</TableCell>
-          <TableCell>Action</TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {demoContent.map(row => (
-          <TableRow key={row.id}>
-            <TableCell component="th" scope="row">
-              {row.id}
-            </TableCell>
-            <TableCell>
-              {row.status}
-            </TableCell>
-            <TableCell>
-              {row.order && (
-                <Button to={`${process.env.PUBLIC_URL}/waiter/order/${row.order}`}>
-                  {row.order}
-                </Button>
-              )}
-            </TableCell>
-            <TableCell>
-              {renderActions(row.status)}
-            </TableCell>
+    <Paper>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>Table</TableCell>
+            <TableCell>Status</TableCell>
+            <TableCell>Order</TableCell>
+            <TableCell>Action</TableCell>
           </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+        </TableHead>
+        <TableBody>
+          {demoContent.map(row => (
+            <TableRow key={row.id}>
+              <TableCell component="th" scope="row">
+                {row.id}
+              </TableCell>
+              <TableCell>
+                {row.status}
+              </TableCell>
+              <TableCell>
+                {row.order && (
+                  <Button to={`${process.env.PUBLIC_URL}/waiter/order/${row.order}`}>
+                    {row.order}
+                  </Button>
+                )}
+              </TableCell>
+              <TableCell>
+                {renderActions(row.status)}
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </Paper>
+    <Grid item xs={12}>
+      <Paper className={styles.paper}>
+        <span>New Order</span>
+        {/*<Link to={`tables/booking/2`} className={styles.link}>New Booking</Link>*/}
+        <Tooltip title="New order" aria-label="new-order">
+          <Fab color="secondary" className={styles.fab} component = {Link} exact to={`/waiter/order/new`}>
+            <AddIcon/>
+          </Fab>
+        </Tooltip>
+      </Paper>
+    </Grid>
   </Paper>
+
+
 );
 
 export default Waiter;

@@ -9,3 +9,14 @@
   text-align: center;
   color: #444;
 }
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form > * {
+  margin: 1vw;
+
+}
