@@ -7,14 +7,14 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-/*import AddIcon from '@material-ui/icons/Add';
-import Fab from '@material-ui/core/Fab';
-import Tooltip from '@material-ui/core/Tooltip';*/
 import Grid from '@material-ui/core/Grid';
 import {Link} from 'react-router-dom';
 import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
 import Tooltip from '@material-ui/core/Tooltip';
+import IconButton from '@material-ui/core/IconButton';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const demoContent = [
   {id: '1', status: 'free', order: null},
@@ -69,6 +69,8 @@ const Waiter = () => (
             <TableCell>Status</TableCell>
             <TableCell>Order</TableCell>
             <TableCell>Action</TableCell>
+            <TableCell></TableCell>
+            <TableCell></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -89,6 +91,14 @@ const Waiter = () => (
               </TableCell>
               <TableCell>
                 {renderActions(row.status)}
+              </TableCell>
+              <TableCell>
+                <IconButton aria-label="delete">
+                  <EditIcon fontSize="large" />
+                </IconButton>
+                <IconButton aria-label="delete">
+                  <DeleteIcon fontSize="large" />
+                </IconButton>
               </TableCell>
             </TableRow>
           ))}

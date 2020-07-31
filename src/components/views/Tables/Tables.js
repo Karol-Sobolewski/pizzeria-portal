@@ -13,22 +13,10 @@ import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import Fab from '@material-ui/core/Fab';
 import Tooltip from '@material-ui/core/Tooltip';
-//import DateFnsUtils from '@date-io/date-fns';
-/*import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
-*/
-
+import TextField from '@material-ui/core/TextField';
 
 const Tables = (id) => {
-  //const [selectedDate, setSelectedDate] = React.useState(new Date('2020-07-29T12:00:00'));
 
-  /*const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
-*/
   const demoContent = [
     {id: 1, hour: '12:00', table1: 'free', table2: 'occupied', table3: `occupied`},
     {id: 2, hour: '12:30', table1: 'free', table2: 'occupied', table3: `free`},
@@ -44,7 +32,6 @@ const Tables = (id) => {
     {id: 12, hour: '17:30', table1: 'free', table2: 'occupied', table3: `occupied`},
     {id: 13, hour: '18:00', table1: 'free', table2: 'occupied', table3: `occupied`},
   ];
-
 
   const renderActions = status => {
     switch (status) {
@@ -68,19 +55,18 @@ const Tables = (id) => {
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <Paper className={styles.paper}>
-            {/*<MuiPickersUtilsProvider >
-              <KeyboardDatePicker
-                margin="normal"
-                id="date-picker-dialog"
-                label="Date picker dialog"
-                format="MM/dd/yyyy"
-                //value={selectedDate}
-                //onChange={handleDateChange}
-                KeyboardButtonProps={{
-                  'aria-label': 'change date',
+            <form noValidate>
+              <TextField
+                id="date-begin"
+                label="Date"
+                type="date"
+                defaultValue="2020-08-02"
+                className={styles.textField}
+                InputLabelProps={{
+                  shrink: true,
                 }}
               />
-              </MuiPickersUtilsProvider>*/}
+            </form>
           </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -141,12 +127,7 @@ const Tables = (id) => {
         </Grid>
       </Grid>
     </div>
-
   );
-};
-
-Tables.propTypes = {
-  id: PropTypes.string,
 };
 
 export default Tables;

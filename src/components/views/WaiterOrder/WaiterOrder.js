@@ -110,7 +110,7 @@ const WaiterOrderNew = (/*{title}*/) => {
           Total: 41$
         </FormControl>
       </Paper>
-      <Paper className={styles.paper}>
+      <Paper className={[styles.paper, styles.center]}>
         <Button variant="contained" color="secondary">
         Order
         </Button>

@@ -3,3 +3,28 @@
 .component {
   padding: $base-size;
 }
+
+.paper {
+  position: relative;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  padding: 2vh;
+  width: 100%;
+  text-align: left;
+  color: #444;
+}
+
+.center {
+  text-align: center;
+}
+.textField {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 200px;
+}
+
+.formControl {
+  margin: 1rem;
+  min-width: 120px;
+}
