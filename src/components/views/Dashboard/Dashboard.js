@@ -19,7 +19,7 @@ const Dashboard = () => {
     {id: 1, table: '1', hourStart: '12:00', hourEnd: '15:00', name: 'Monika', contact: '12345789 / monika@gmail.com', reservation: 'Private'},
     {id: 2, table: '2', hourStart: '12:00', hourEnd: '13:00', name: 'Comarch', contact: '789456132 / evemts@comarch.pl', reservation: 'Event'},
   ];
-
+  /*eslint-disable*/
   const renderActions = status => {
     switch (status) {
       case 'free':

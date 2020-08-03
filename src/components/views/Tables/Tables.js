@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Tables.module.scss';
-import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';

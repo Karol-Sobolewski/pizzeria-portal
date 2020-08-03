@@ -9,10 +9,6 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 
 const WaiterOrderNew = (/*{title}*/) => {
   // const [checked, setChecked] = React.useState(true);
@@ -20,7 +16,7 @@ const WaiterOrderNew = (/*{title}*/) => {
   /*const handleChange = (event) => {
     setChecked(event.target.checked);
   };*/
-
+/*eslint-disable*/
   function valuetext(value) {
     return `${value}people`;
   }

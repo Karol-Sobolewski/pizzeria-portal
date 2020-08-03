@@ -3,7 +3,7 @@ import styles from './TablesBooking.module.scss';
 import { useParams } from 'react-router-dom';
 
 const TablesBooking = (props) => {
-
+/*eslint-disable*/
   console.log(props.match.params.id);
   const { id } = useParams();
   return (
