@@ -1,7 +1,7 @@
 /*eslint-disable*/
 export const api = {
-  url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
-  tables: 'tables',
+  url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131/api' : '/api'),
+  tables: 'table',
   products: 'products',
   order: 'order',
   booking: 'booking',

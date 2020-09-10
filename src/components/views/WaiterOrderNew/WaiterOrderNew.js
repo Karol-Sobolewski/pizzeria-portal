@@ -9,7 +9,6 @@ import TreeItem from '@material-ui/lab/TreeItem';
 const WaiterOrderNew = (/*{title}*/) => (
 
   <Paper className={styles.component}>
-      hellow
     <TreeView
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
